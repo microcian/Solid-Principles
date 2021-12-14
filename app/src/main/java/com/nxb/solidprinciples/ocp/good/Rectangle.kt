@@ -1,9 +1,10 @@
 package com.nxb.solidprinciples.ocp.good
 
+class Rectangle : Shape {
+    var length = 0
+    var height = 0
 
-data class Rectangle(val length: Double, val height: Double) : Shape {
-
-    override fun getArea(): Double {
+    override fun getArea(): Int {
         return (length * height)
     }
 }

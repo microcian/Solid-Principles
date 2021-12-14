@@ -1,3 +1,6 @@
 package com.nxb.solidprinciples.ocp.bad
 
-data class Rectangle(val length: Double, val height: Double)
+class Rectangle {
+    var length = 0
+    var height = 0
+}
