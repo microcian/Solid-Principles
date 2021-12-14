@@ -1,5 +1,5 @@
 package com.nxb.solidprinciples.ocp.good
 
 interface Shape {
-    fun getArea() : Any
+    fun getArea() : Double
 }

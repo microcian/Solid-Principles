@@ -1,13 +1,10 @@
 package com.nxb.solidprinciples.ocp.good
 
 object AreaFactory {
-    fun calculateArea(shapes: ArrayList<Any>): Double {
+    fun calculateArea(shapes: ArrayList<Shape>): Double {
         var area = 0.0
         shapes.forEach { shape ->
-            if (shape is Rectangle)
-                area += shape.getArea()
-            if (shape is Circle)
-                area += shape.getArea()
+            area += shape.getArea()
         }
         return area
     }
