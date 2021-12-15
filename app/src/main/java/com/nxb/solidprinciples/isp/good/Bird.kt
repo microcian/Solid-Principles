@@ -1,6 +1,6 @@
 package com.nxb.solidprinciples.isp.good
 
-class Bird : FlyingAnimal, Animal {
+class Bird : FlyingAnimal {
     override fun eat() {
         println("Bird is eating forage")
     }

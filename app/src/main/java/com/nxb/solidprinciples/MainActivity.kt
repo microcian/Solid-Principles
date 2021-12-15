@@ -1,9 +1,10 @@
 package com.nxb.solidprinciples
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.nxb.solidprinciples.dip.bad.AndroidDeveloper
-import com.nxb.solidprinciples.dip.bad.IosDeveloper
+import androidx.appcompat.app.AppCompatActivity
+import com.nxb.solidprinciples.lsp.good.Bicycle
+import com.nxb.solidprinciples.lsp.good.Car
+import com.nxb.solidprinciples.lsp.good.Vehicle
 import com.nxb.solidprinciples.ocp.good.AreaFactory
 import com.nxb.solidprinciples.ocp.good.Circle
 import com.nxb.solidprinciples.ocp.good.Rectangle
@@ -14,5 +15,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         AreaFactory.calculateArea(arrayListOf(Rectangle(), Circle()))
+
+        test(Bicycle(), Car())
     }
+
+    fun test(vehicle: Vehicle, vehicleCar: Vehicle) {}
 }
